@@ -62,7 +62,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://192.168.153.100:8000/devices')
+      .get('http://127.0.0.1:8000/devices')
       .then(response => {
         console.log(response.data[0]);
         for (let device of response.data) {
